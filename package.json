@@ -1,0 +1,17 @@
+{
+  "name": "easy-input-react",
+  "version": "1.0.0",
+  "description": "It is a react library for building input component easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "input",
+    "easy-input",
+    "component"
+  ],
+  "author": "Moshiur Rahman",
+  "license": "MIT"
+}
