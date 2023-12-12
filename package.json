@@ -1,17 +1,26 @@
 {
   "name": "easy-input-react",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "It is a react library for building input component easily",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
   "keywords": [
     "react",
     "input",
     "easy-input",
-    "component"
+    "component",
+    "easy-input-react",
+    "ui-component"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moshiurse/easy-input-react"
+  },
   "author": "Moshiur Rahman",
   "license": "MIT"
 }
