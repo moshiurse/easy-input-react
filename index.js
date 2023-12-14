@@ -1,5 +1,3 @@
-function hello() {
-    return "hello world"
-  }
-  
-  module.exports = hello;
+import { Button } from "./src/components/Button";
+
+export const Button = Button;
