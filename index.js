@@ -1,3 +1,1 @@
-import { Button } from "./src/components/Button";
-
-export const Button = Button;
+export { Button } from "./src/components/Button";
