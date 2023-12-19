@@ -8,12 +8,18 @@ function Button(props) {
         title = 'Easy Button',
         height = '60px',
         fullWidth = false,
-        children
+        children,
+        disabled = false,
+        color,
+        prefixIcon,
+        suffixIcon,
+        type,
+        effect = 'ripple'
     } = props;
     console.log(props);
 
     return (
-        <button className={style['ei-btn']}>{children ? children : title}</button>
+        <button className={style['ei-btn']} disabled={disabled}>{children ? children : title}</button>
     )
 }
 
