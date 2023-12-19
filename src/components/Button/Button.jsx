@@ -1,5 +1,6 @@
 import {forwardRef} from 'react';
 import PropTypes from "prop-types";
+import style from "./Button.module.css";
 
 function Button(props) {
 
@@ -12,7 +13,7 @@ function Button(props) {
     console.log(props);
 
     return (
-        <button>{children ? children : title}</button>
+        <button className={style['ei-btn']}>{children ? children : title}</button>
     )
 }
 
