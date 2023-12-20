@@ -24,6 +24,16 @@
     transition: box-shadow 0.2s;
 }
 
+.ei-btn.primary {
+    background-color: rgb(33, 150, 243);
+}
+.ei-btn.danger {
+    background-color: #B00020;
+}
+.ei-btn.warning {
+    background-color: #e5aa0a;
+}
+
 .ei-btn::-moz-focus-inner{
     border: none;
 }
