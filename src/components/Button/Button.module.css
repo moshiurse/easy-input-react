@@ -34,6 +34,10 @@
     background-color: #e5aa0a;
 }
 
+.ei-btn.rounded {
+    border-radius: 50rem;
+}
+
 .ei-btn::-moz-focus-inner{
     border: none;
 }

@@ -10,6 +10,7 @@ import style from "./Button.module.css";
  * @property {string} [height='60px']
  * @property {boolean} [fullWidth=false]
  * @property {boolean} [disabled=false]
+ * @property {boolean} [rounded=false]
  * @property {string} color
  * @property {React.ReactNode} prefixIcon
  * @property {React.ReactNode} suffixIcon
@@ -29,31 +30,37 @@ function Button(props) {
 
     const {
         title = 'Easy Button',
+        width,
         height = '60px',
         fullWidth = false,
         children,
         disabled = false,
+        rounded = false,
         color,
         prefixIcon,
         suffixIcon,
         type,
         effect = 'ripple',
+        loading = false,
+        className = '',
         onClick,
         onMouseEnter,
         onMouseLeave,
         onFocus,
-        onBlur
+        onBlur,
+        onDoubleClick
     } = props;
     console.log(props, children);
 
     return (
-        <button className={`${style['ei-btn']} ${style[type]}`} 
+        <button className={`${style['ei-btn']} ${style[type]} ${rounded ? style.rounded : ''} ${className}`} 
             disabled={disabled}
             onClick={onClick}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             onFocus={onFocus}
             onBlur={onBlur}
+            onDoubleClick={onDoubleClick}
             >{children ? children : title}</button>
     )
 }
